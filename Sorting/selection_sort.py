@@ -6,7 +6,6 @@ def selection_sort(array):
         key = array[i]
 
         min_index = i
-        j = i + 1
         for j in range(i, len(array)):
             if array[j] < key:
                 key = array[j]
