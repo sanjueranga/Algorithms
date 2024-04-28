@@ -3,16 +3,14 @@ numbers = [2, 8, 7, 1, 3, 5, 6, 4]
 
 def partition(array, p, r):
 
-    pivot = array[r]
-    i = p - 1
-
-    for j in range(p, r):
+    pivot = array[r] #4
+    i = p - 1 #-1
+    for j in range(p, r+1):
         if array[j] <= pivot:
-            i += 1
+            i += 1 #2
             array[i], array[j] = array[j], array[i]
-        print(array)
-    array[i + 1], array[r] = array[r], array[i + 1]
-    return i + 1
+    # array[i + 1], array[r] = array[r], array[i + 1]
+    return i
 
 
 def quick_sort(array, p, r):
