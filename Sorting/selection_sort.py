@@ -5,14 +5,17 @@ def selection_sort(array):
     for i in range(len(array) - 1):
         key = array[i]
 
-        min_index = i
-        for j in range(i, len(array)):
-            if array[j] < key:
-                key = array[j]
+        min_index = i+1
+        for j in range(i+1,len(array)):
+            if array[j] < array[min_index]:
                 min_index = j
 
-        array[i], array[min_index] = key, array[i]
-        print(array)
+        if array[min_index] < key:
+            array[i] = array[min_index]
+            array[min_index] = key
+
+    print(array)
+            
 
 
 selection_sort(array)
