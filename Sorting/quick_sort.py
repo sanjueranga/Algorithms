@@ -9,7 +9,6 @@ def partition(array, p, r):
         if array[j] <= pivot:
             i += 1 #2
             array[i], array[j] = array[j], array[i]
-    # array[i + 1], array[r] = array[r], array[i + 1]
     return i
 
 

@@ -5,6 +5,7 @@ def insert_sort(array):
         key = array[i]
         print(key)
         j = i - 1
+        print(array[j])
         while j >= 0 and array[j] > key:
             array[j + 1] = array[j]
             j -= 1
