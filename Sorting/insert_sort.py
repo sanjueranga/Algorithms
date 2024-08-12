@@ -10,10 +10,10 @@ def insert_sort(array):
         while j >= 0 and array[j] > key:
             array[j + 1] = array[j]
             array[j] = key
-            j -= 1
+            # j -= 1
             # print(array)
 
-        # array[j + 1] = key
+        array[j + 1] = key
         # print(array)
     return array
 
