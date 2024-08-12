@@ -1,4 +1,4 @@
-nubmers = [7, 4, 8, 9, 3, 5, 6, 2]
+nubmers = [56, 51, 13, 33, 25, 12, 4, 8, 19, 2, 64, 77, 85, 98, 44, 27]
 
 
 def merge_sort(array):
@@ -30,9 +30,8 @@ def merge_sort(array):
             array[k] = R[j]
             j += 1
             k += 1
-
         print(array)
-        
+
 
 
 merge_sort(nubmers)

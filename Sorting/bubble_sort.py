@@ -1,4 +1,4 @@
-array = [5, 42, 35, 12, 77, 101]
+array = [56, 51, 13, 33,25, 12, 4, 8, 19, 2, 64, 77, 85, 98,44, 27]
 
 
 def bubble_sort(array):
@@ -13,6 +13,7 @@ def bubble_sort(array):
 
         if not swapped:
             return array
+        print(array)
 
 
 print(bubble_sort(array))
